@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Конструктор — Interactive Task Builder</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"></head>
+<body>
+<header><b class="logo">Interactive Task Builder</b>
+<nav><a href="index.html">Главная</a><a href="index.html#all">Все задания</a><a href="builder.html">Создать</a><a href="index.html#mine">Мои задания</a></nav></header>
+<main>
+<div id="editor">
+<h1>Новое задание</h1>
+<p>Выберите тип упражнения:</p>
+<div id="types" class="types"></div>
+<div id="form" hidden>
+<div class="tabs"><button id="tEdit" class="on">Редактор</button> <button id="tPrev" class="ghost">Предпросмотр</button></div>
+<div id="edit">
+<label>Название <input id="title"></label>
+<label>Инструкция <input id="instr"></label>
+<label>Сложность <select id="level"></select></label>
+<label>Сколько элементов брать из банка (0 — все) <input id="n" type="number" min="0" value="0"></label>
+<p id="hint" class="hint"></p>
+<div id="rows"></div>
+<button id="add" class="ghost">+ Добавить</button> <button id="save">Сохранить задание</button>
+<p id="msg" class="fb"></p>
+</div>
+<div id="prev" hidden></div>
+</div>
+</div>
+<div id="play" hidden></div>
+</main>
+<script src="js/tasks.js"></script><script src="js/checker.js"></script><script src="js/builder.js"></script>
+</body></html>

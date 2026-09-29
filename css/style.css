@@ -1,0 +1,108 @@
+:root{--p:#0f4c5c;--a:#e36414;--bg:#eef3f4;--ok:#16a34a;--bad:#dc2626}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,sans-serif;background:var(--bg);color:#14232b}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:14px 24px;background:var(--p);color:#fff}
+.logo{font-size:1.2rem}
+nav a{margin-left:18px;color:#fff;text-decoration:none;opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline}
+main{max-width:1000px;margin:auto;padding:24px}
+.hero{padding:12px 0 8px}
+button,.btn{display:inline-block;background:var(--p);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;cursor:pointer;text-decoration:none;transition:transform .15s}
+button:hover,.btn:hover{transform:translateY(-2px)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--a)}
+.ghost{background:#d7e3e6!important;color:#14232b!important}
+button.on{background:var(--a)}
+input,select{padding:8px;border:1px solid #b7c7cc;border-radius:8px;font:inherit;max-width:100%}
+label{display:block;margin:10px 0}
+label input,label select{display:block;width:100%;max-width:520px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.filters input{flex:1;min-width:200px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card,.play,.result,.q{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 10px #0001;margin-bottom:12px}
+.card{margin:0;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card h3{margin:8px 0 4px}
+.tag{background:#ffe8d6;color:#9a3b00;padding:2px 10px;border-radius:99px;font-size:.85rem}
+.types,.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.hint{color:#4b6068}
+.row{display:flex;gap:6px;margin:6px 0}
+.row input{flex:1;min-width:0}
+fieldset{border:0;padding:0;margin:0}
+.opt{display:block;padding:6px 8px;border-radius:8px}
+.chip{display:inline-block;background:#e2eef1;border:1px solid #9fbcc4;border-radius:8px;padding:6px 12px;margin:4px;cursor:grab;user-select:none}
+ul.seq{list-style:none;padding:0}
+ul.seq .chip{display:block}
+.zone{min-height:48px;border:2px dashed #9fbcc4;border-radius:10px;padding:6px}
+.zone.over{background:#e2eef1}
+.buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:12px}
+.bucket h4{margin:0 0 4px}
+.pair{display:flex;gap:10px;align-items:center;margin:6px 0}
+.term{flex:1;font-weight:600}
+.slot{flex:2}
+.gap{width:140px;margin:0 6px}
+.code{background:#14232b;color:#e8f1f3;border-radius:8px;font-family:monospace;padding:8px}
+.line{padding:4px 8px;border-radius:4px;cursor:pointer;white-space:pre}
+.line:hover,.line.sel{background:#2f4a55}
+.good{outline:2px solid var(--ok);background:#dcfce7!important;color:#14232b}
+.bad{outline:2px solid var(--bad);background:#fee2e2!important;color:#14232b}
+.bar{height:10px;background:#cfdde1;border-radius:9px;overflow:hidden;margin-bottom:14px}
+.bar i{display:block;height:100%;background:var(--a);transition:width .5s}
+.fb{margin:12px 0}
+.big{font-size:3rem;font-weight:700;color:var(--p)}
+/* TeachAI dashboard */
+.ai-page{background:#f5f7fb;color:#182230}.ai-page header{background:#151c2c;padding:16px 28px}.ai-page .logo span{color:#7c8cff}.ai-page nav a{text-decoration:none}.dashboard{max-width:1250px}.ai-hero{background:linear-gradient(120deg,#202b49,#334b7d);color:#fff;border-radius:18px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:18px;box-shadow:0 12px 35px #17223a22}.eyebrow{font-size:11px;letter-spacing:2px;color:#aebdff;font-weight:700}.ai-hero h1{font-size:32px;margin:8px 0}.ai-hero p{margin:0;color:#d4dcf0;max-width:700px}.ai-btn{background:#fff!important;color:#26355b!important}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}.stat-card{background:#fff;border:1px solid #e4e8f0;border-radius:14px;padding:18px}.stat-card small{color:#7c8798}.stat-card strong{display:block;font-size:28px;margin:6px 0}.stat-card em{font-style:normal;font-size:12px}.green-text{color:#159568}.orange-text{color:#d88922}.red-text{color:#d65c69}.dash-grid{display:grid;grid-template-columns:1.6fr .9fr;gap:18px}.panel{background:#fff;border:1px solid #e4e8f0;border-radius:14px;padding:20px;box-shadow:0 3px 14px #1d2a3a08}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}.panel h2{font-size:18px;margin:0}.panel p{font-size:12px;color:#8490a0;margin:3px 0 0}.students{display:grid;gap:8px}.student{display:grid;grid-template-columns:1.5fr .8fr 1fr 90px;align-items:center;gap:10px;padding:12px;border:1px solid #edf0f5;border-radius:10px;cursor:pointer;transition:.15s}.student:hover{transform:translateY(-1px);border-color:#cbd3e3}.student-name b{display:block}.student-name small{color:#929baa}.score{font-weight:800;font-size:17px}.mini-bar{height:7px;background:#e9edf3;border-radius:10px;overflow:hidden}.mini-bar i{display:block;height:100%;background:#596fe7;border-radius:10px}.status{font-size:11px;padding:5px 8px;border-radius:20px;text-align:center}.status.good{background:#e5f8ef;color:#16835c}.status.mid{background:#fff4df;color:#b9791b}.status.low{background:#ffeaed;color:#c14e5d}.ai-dot{font-size:10px;color:#299c74}.insight{border:1px solid #e8ebf2;border-radius:10px;padding:13px;margin-bottom:9px;background:#fafbfe}.insight b{display:block;margin-bottom:4px}.insight p{line-height:1.5}.full{width:100%;margin-top:5px}.topic{margin:13px 0}.topic-head{display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px}.topic-bar{height:9px;background:#e9edf3;border-radius:10px;overflow:hidden}.topic-bar i{display:block;height:100%;background:#596fe7;border-radius:10px}
+.ai-modal{position:fixed;inset:0;background:rgba(10,17,30,.68);backdrop-filter:blur(7px);display:grid;place-items:center;padding:24px;z-index:100}
+.ai-modal[hidden]{display:none!important}
+.ai-modal-box{width:min(760px,calc(100vw - 48px));max-height:min(720px,calc(100vh - 48px));overflow:auto;background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);border:1px solid #e2e7f2;border-radius:24px;padding:30px;position:relative;box-shadow:0 30px 90px rgba(15,28,55,.28);animation:modalIn .22s ease-out}
+.close-btn{position:absolute;right:18px;top:18px;width:38px;height:38px;border-radius:12px;background:#eef2f8;color:#27334a;padding:0;font-size:24px;line-height:1}
+.close-btn:hover{background:#e1e7f1;transform:none}
+.detail-layout{display:grid;grid-template-columns:210px 1fr;gap:26px;align-items:start}
+.detail-hero{background:linear-gradient(145deg,#1d2c52,#536fe2);border-radius:20px;padding:22px;color:#fff;min-height:245px;display:flex;flex-direction:column;justify-content:space-between}
+.detail-avatar{width:62px;height:62px;border-radius:18px;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:25px;font-weight:800}
+.detail-score{font-size:48px;font-weight:850;letter-spacing:-2px;color:#fff;margin-top:20px}
+.detail-score-label{font-size:11px;color:#dce4ff}
+.detail-main h2{font-size:26px;margin:0 45px 4px 0}
+.detail-main .muted{color:#7f8a9d;font-size:12px;margin:0 0 20px}
+.detail-section{background:#fff;border:1px solid #e7ebf3;border-radius:15px;padding:15px;margin:12px 0}
+.detail-section h3{font-size:13px;margin:0 0 9px}
+.detail-list{padding-left:20px;line-height:1.8;margin:0}
+.detail-tag{display:inline-block;background:#eef1ff;color:#4e61c8;border-radius:999px;padding:5px 9px;font-size:10px;margin:3px}
+.detail-progress{height:8px;background:#e8ecf4;border-radius:99px;overflow:hidden;margin-top:8px}
+.detail-progress i{display:block;height:100%;background:linear-gradient(90deg,#596fe7,#7d8ff2);border-radius:99px}
+.detail-actions{display:flex;gap:8px;margin-top:16px}
+.detail-actions .btn{flex:1}
+@keyframes modalIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+@media(max-width:650px){.ai-modal{padding:10px}.ai-modal-box{width:calc(100vw - 20px);max-height:calc(100vh - 20px);padding:20px;border-radius:18px}.detail-layout{grid-template-columns:1fr}.detail-hero{min-height:180px}.detail-score{font-size:40px}}
+@media(max-width:850px){.ai-hero{display:block}.ai-btn{margin-top:18px}.stats{grid-template-columns:repeat(2,1fr)}.dash-grid{grid-template-columns:1fr}.student{grid-template-columns:1fr 70px}.student .mini-bar{display:none}}@media(max-width:520px){.ai-page header{padding:14px}.dashboard{padding:14px}.stats{grid-template-columns:1fr 1fr}.ai-hero h1{font-size:25px}.student{grid-template-columns:1fr 65px}.student .status{grid-column:2}.panel{padding:14px}}
+
+.ai-page .student:nth-child(1){border-left:4px solid #596fe7}
+.ai-page .student:nth-child(2){border-left:4px solid #7d8ff2}
+.ai-page .student:nth-child(3){border-left:4px solid #9aa8ee}
+.ai-page .panel{transition:box-shadow .2s,transform .2s}
+.ai-page .panel:hover{box-shadow:0 8px 26px rgba(29,42,58,.07)}
+
+/* TeachAI unified visual system */
+.ai-page{background:#f6f7fb;color:#202438}
+.ai-page header{background:#fff;border-bottom:1px solid #e8eaf1}
+.ai-page .logo{color:#24263a}
+.ai-page .logo span{color:#7055e8}
+.ai-page .dashboard{max-width:1180px}
+.ai-hero{background:#fff!important;color:#24263a!important;border:1px solid #e8eaf1;box-shadow:none!important;border-radius:16px!important}
+.ai-hero h1{color:#24263a}
+.ai-hero p{color:#85899b}
+.ai-page .panel,.ai-page .stat-card{background:#fff;border:1px solid #e8eaf1;box-shadow:none}
+.ai-page .panel{border-radius:14px}
+.ai-page .student{background:#fff;border:1px solid #e9ebf1;border-radius:11px}
+.ai-page .student:hover{border-color:#cfc8f7;background:#fbfaff}
+.ai-page .ai-btn{background:#7055e8!important;color:#fff}
+.ai-page .topic-bar{background:#eceef4}
+.ai-page .topic-bar i{background:#7055e8}
+.ai-page .mini-bar{background:#eceef4}
+.ai-page .mini-bar i{background:#7055e8}
+.grade-box{background:#f7f5ff;border:1px solid #e2ddff;border-radius:12px;padding:15px}
+.grade-row{display:flex;align-items:center;gap:10px}
+.grade-input{width:82px;padding:10px 11px;border:1px solid #dfe2eb;border-radius:9px;background:#fff;font-weight:700;font-size:16px;outline:none}
+.grade-input:focus{border-color:#7055e8;box-shadow:0 0 0 3px #7055e81a}
+.grade-save{background:#7055e8!important;color:#fff!important}
+.ai-grade-result{margin-top:10px;padding:11px;border-radius:9px;background:#fff;border:1px solid #e7e3ff;font-size:11px;line-height:1.55}
+.teacher-badge{display:inline-block;margin-left:7px;padding:4px 7px;border-radius:999px;background:#eeeaff;color:#634fd0;font-size:9px;font-weight:700}

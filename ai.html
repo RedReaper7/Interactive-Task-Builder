@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TeachAI — помощник учителя</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"></head>
+<body class="ai-page">
+<header><b class="logo">TeachAI <span>•</span> Interactive Task Builder</b><nav><a href="index.html">Задания</a><a href="builder.html">Конструктор</a><a href="ai.html">AI-помощник</a></nav></header>
+<main class="dashboard">
+<section class="ai-hero"><div><div class="eyebrow">✦ AI TEACHER ASSISTANT</div><h1>Помощник преподавателя</h1><p>Создавайте задания, отслеживайте результаты и получайте понятный анализ успеваемости группы.</p></div><button id="analyzeBtn" class="btn ai-btn">✦ Анализировать группу</button></section>
+<section class="stats" id="stats"></section>
+<div class="dash-grid"><section class="panel"><div class="panel-head"><div><h2>Успеваемость и оценки</h2><p>Откройте ученика, чтобы выставить оценку и получить AI-рекомендацию.</p></div><select id="sort"><option value="score">По результату</option><option value="name">По имени</option><option value="status">По статусу</option></select></div><div id="students" class="students"></div></section>
+<aside class="panel"><div class="panel-head"><div><h2>AI-анализ учителя</h2><p id="analysisTime">Анализ готов</p></div><span class="ai-dot">● LIVE</span></div><div id="insights"></div><button id="newData" class="btn ghost full">↻ Обновить результаты</button></aside></div>
+<section class="panel topics"><div class="panel-head"><div><h2>Результаты по темам</h2><p>Где группе чаще всего требуется повторение</p></div></div><div id="topicBars"></div></section>
+</main>
+<div id="modal" class="ai-modal" hidden><div class="ai-modal-box"><button id="close" class="close-btn">×</button><div id="detail"></div></div></div>
+<script src="js/ai.js"></script></body></html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interactive Task Builder</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"></head>
+<body>
+<header><b class="logo">Interactive Task Builder</b>
+<nav><a href="index.html">Главная</a><a href="index.html#all">Все задания</a><a href="builder.html">Создать</a><a href="index.html#mine">Мои задания</a><a href="ai.html">✦ AI-помощник</a></nav></header>
+<main>
+<div id="list">
+<section class="hero"><h1>Конструктор интерактивных заданий</h1>
+<p>Создавайте упражнения без кода, а AI-помощник анализирует результаты и успеваемость группы.</p><p><a class="btn" href="ai.html">✦ Открыть AI-помощника</a></p>
+<button id="mix">Случайный микс</button> <a class="btn" href="builder.html">+ Создать задание</a></section>
+<div class="filters"><input id="q" placeholder="Поиск по названию"><select id="ft"></select><select id="fl"></select></div>
+<div id="cards" class="cards"></div>
+</div>
+<div id="play" hidden></div>
+</main>
+<script src="js/tasks.js"></script><script src="js/checker.js"></script><script src="js/app.js"></script>
+</body></html>
